@@ -1,0 +1,1 @@
+command Ter :silent !terminalLauncher
