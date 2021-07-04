@@ -35,7 +35,7 @@ awesome.connect_signal(
     function(args)
         --os.execute('x-terminal-emulator --wait -- bashtop')
         awful.spawn.once('gnome-terminal --wait -- bashtop', {tag = screen[1].tags[7]})
-        awful.spawn.once('gnome-terminal --wait -- ranger', {tag = screen[1].tags[6]})
+        awful.spawn.once('gnome-terminal --wait -- vifm', {tag = screen[1].tags[6]})
         --awful.util.spawn('gnome-terminal --wait -- bashtop')
         --awful.util.spawn('gnome-terminal --wait -- ranger')
     end
