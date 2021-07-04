@@ -119,7 +119,7 @@ local themes = {
 local chosen_theme = themes[5]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "gnome-terminal"
+local terminal     = "x-terminal-emulator"
 local file_explorer = "nautilus"
 local file_explorer_termial = "gnome-terminal --wait -- ranger"
 local start_anbox   = 'anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity'
