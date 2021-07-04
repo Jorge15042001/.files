@@ -1,7 +1,7 @@
 #!/binbash
 
 vifmDir=$(pwd)
-echo awesomeWM config is at  $vifmDir
+echo vifm config is at  $vifmDir
 echo 
 
 ## safely backup old config
