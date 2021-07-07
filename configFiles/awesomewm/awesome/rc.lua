@@ -121,7 +121,7 @@ local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "x-terminal-emulator"
 local file_explorer = "nautilus"
-local file_explorer_termial = "gnome-terminal --wait -- ranger"
+local file_explorer_termial = "x-terminal-emulator -e vifm"
 local start_anbox   = 'anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity'
 local vi_focus     = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = false  -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
