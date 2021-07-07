@@ -1,25 +1,31 @@
-set nospell spelllang=en_us
+ set nospell spelllang=en_us
 syntax on
 
-set mouse=a
-set number
+" Set encoding
 set encoding=utf-8
-set backspace=indent,eol,start
-set cursorline
-set guioptions=
-set autoindent 
-set hls
 
-set guicursor=
+"Enable clicking
+set mouse=a
+
+" numeration
+set number
 set relativenumber
-set nohlsearch
+
+set backspace=indent,eol,start
+" set cursorline 
+"overwritten by transparent background
+set autoindent 
+" set hls
+
 set hidden
 set noerrorbells
+
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
+
 set smartindent
-set nu
+
 set nowrap
 set smartcase
 set noswapfile
@@ -29,11 +35,11 @@ set undofile
 set incsearch
 set termguicolors
 set scrolloff=8
-set noshowmode
+
+
+"set noshowmode "airline already install
 set completeopt=menuone,noinsert,noselect
 set background=dark
-set splitbelow
-set splitright
 "configuration fro compiling c++
 autocmd filetype cpp nnoremap <C-c> :!g++ -o %:r.out % -std=c++17<Enter>
 autocmd filetype cpp nnoremap <C-x> :!./%:r.out %<Enter>
@@ -46,9 +52,9 @@ autocmd filetype c nnoremap <C-x> :!./%:r.out %<Enter>
 autocmd filetype python nnoremap <C-x> :!python3 %:r.py % <Enter>
 
 "adding git commands 
-nnoremap <C-a> :!git add % <Enter> :e <Enter> 
-nnoremap <C-h> :!git commit -m"
-nnoremap <C-i> :!git restore %  <Enter>
+" nnoremap <C-a> :!git add % <Enter> :e <Enter> 
+" nnoremap <C-h> :!git commit -m"
+" nnoremap <C-i> :!git restore %  <Enter> :e <Enter>
 
 
 
@@ -69,4 +75,5 @@ Plug 'airblade/vim-gitgutter'
 "Plug 'stevearc/vim-arduino'
 "Plug 'tikhomirov/vim-glsl'
 "Plug 'petrbroz/vim-glsl'
+Plug 'jreybert/vimagit'
 call plug#end()
