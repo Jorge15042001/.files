@@ -1,13 +1,13 @@
 " for transparent background
 function! AdaptColorscheme()
    highlight clear CursorLine
-   highlight Normal ctermbg=none
-   highlight LineNr ctermbg=none
-   highlight Folded ctermbg=none
-   highlight NonText ctermbg=none
-   highlight SpecialKey ctermbg=none
-   highlight VertSplit ctermbg=none
-   highlight SignColumn ctermbg=none
+   highlight Normal ctermbg=None
+   highlight LineNr ctermbg=None
+   highlight Folded ctermbg=None
+   highlight NonText ctermbg=None
+   highlight SpecialKey ctermbg=None
+   highlight VertSplit ctermbg=None
+   highlight SignColumn ctermbg=None
 endfunction
 autocmd ColorScheme * call AdaptColorscheme()
 
