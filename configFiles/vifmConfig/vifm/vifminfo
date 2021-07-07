@@ -18,6 +18,27 @@ l2
 r2
 
 # Left window history (oldest to newest):
+d/mnt
+	..
+0
+d/opt
+	..
+0
+d/home/jorge1504/27d7c5df84e35f654fcd1a93b9c70d0a7f70fd53
+	..
+0
+d/home/jorge1504/Downloads
+	RubricForDeterminingIndividualGradesInWorkshops.docx
+54
+d/home/jorge1504/.files/configFiles/bash
+	.bashrc
+2
+d/home/jorge1504/.vim
+	..
+0
+d/home/jorge1504/.files/configFiles/bash
+	.bashrc
+2
 d/home/jorge1504/.files/configFiles/vifmConfig
 	..
 0
@@ -55,8 +76,23 @@ d/home/jorge1504/espol/SoftwareDesign
 	notes
 1
 d/home/jorge1504/espol/SoftwareDesign/notes
-	2:nivelesDeDisenio.md
-2
+	3:EstilosArquitectonicos.md
+3
+d/home/jorge1504/espol/SoftwareDesign
+	notes
+1
+d/home/jorge1504/espol/SoftwareDesign/notes
+	3:EstilosArquitectonicos.md
+3
+d/home/jorge1504/espol/SoftwareDesign
+	notes
+1
+d/home/jorge1504/espol
+	..
+0
+d/home/jorge1504
+	reaper
+26
 d
 
 # Right window history (oldest to newest):
@@ -254,10 +290,13 @@ D/home/jorge1504/espol/SoftwareDesign
 1
 D/home/jorge1504/espol/SoftwareDesign/notes
 	ModeloVistaControlador.md
-9
+10
 D
 
 # Command line history (oldest to newest):
+:!touch 1:principiosDeDisenio.md
+:filer .pdf
+:filter .pdf
 :!rm *.out
 :term
 :Term
@@ -266,6 +305,8 @@ D
 :q
 
 # Search history (oldest to newest):
+/pdf
+/bash
 /Pi
 /confi
 /.fil
@@ -352,10 +393,10 @@ t/home/jorge1504/.local/share/vifm/Trash/000_ran
 # State:
 f
 i1
-[.1
+[.0
 [F
 F
 I1
-].1
+].0
 ]F
 s0
