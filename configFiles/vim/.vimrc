@@ -1,4 +1,4 @@
- set nospell spelllang=en_us
+set nospell spelllang=en_us
 syntax on
 
 " Set encoding
@@ -73,8 +73,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 "Plug 'stevearc/vim-arduino'
 "Plug 'tikhomirov/vim-glsl'
 "Plug 'petrbroz/vim-glsl'
-Plug 'jreybert/vimagit'
+"Plug 'jreybert/vimagit'
 call plug#end()
