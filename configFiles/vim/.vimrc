@@ -62,6 +62,7 @@ autocmd filetype python nnoremap <C-x> :!python3 %:r.py % <Enter>
 
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
+lug 'dracula/vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
