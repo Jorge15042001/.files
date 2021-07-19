@@ -150,3 +150,6 @@ set -o vi
 
 # startship
 eval "$(starship init bash)"
+neofetch
+
+
