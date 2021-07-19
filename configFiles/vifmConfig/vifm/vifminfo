@@ -309,6 +309,7 @@ D
 :w
 :!terminalLauncher
 :q
+:Wq
 
 # Search history (oldest to newest):
 /pdf
