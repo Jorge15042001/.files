@@ -126,7 +126,7 @@ local file_explorer = "nautilus"
 local file_explorer_termial = "x-terminal-emulator -e vifm"
 local start_anbox   = 'anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity'
 local vi_focus     = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
-local cycle_prev   = false  -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
+local cycle_prev   = true  -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
 local editor       = os.getenv("EDITOR") or "vim"
 local browser      = "firefox"
 local screenshot_command = "flameshot gui -p ~/Pictures"
@@ -582,7 +582,10 @@ globalkeys = mytable.join(
         {description = "show rofi", group = "launcher"}),
     --]]
     -- Prompt
-    awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,
+    awful.key({ modkey }, "r",
+    --function () awful.screen.focused().mypromptbox:run() end,
+    function () awful.spawn("rofi -show run")  end,
+
               {description = "run prompt", group = "launcher"}),
 
     awful.key({ modkey }, "x",

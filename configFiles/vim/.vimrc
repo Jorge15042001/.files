@@ -51,6 +51,10 @@ autocmd filetype c nnoremap <C-x> :!./%:r.out %<Enter>
 "runing python scripts
 autocmd filetype python nnoremap <C-x> :!python3 %:r.py % <Enter>
 
+
+" spelllang for md files
+autocmd FileType markdown setlocal spell
+autocmd BufRead,BufNewFile *.md setlocal spell
 "adding git commands 
 " nnoremap <C-a> :!git add % <Enter> :e <Enter> 
 " nnoremap <C-h> :!git commit -m"

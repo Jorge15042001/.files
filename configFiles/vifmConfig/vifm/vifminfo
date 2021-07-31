@@ -18,6 +18,15 @@ l2
 r2
 
 # Left window history (oldest to newest):
+d/home/jorge1504/Downloads/1626759553510-vDm1y9foqMOQYIh2
+	..
+0
+d/home/jorge1504/firebaseGeovanny
+	functions
+1
+d/home/jorge1504/firebaseGeovanny/functions
+	index.html
+4
 d/mnt
 	..
 0
@@ -97,8 +106,14 @@ d/home
 	jorge1504
 1
 d/home/jorge1504
-	.nvidia-settings-rc
-16
+	.mysql_history
+41
+d/home
+	jorge1504
+1
+d/home/jorge1504
+	.sudo_as_admin_successful
+17
 d
 
 # Right window history (oldest to newest):
@@ -300,6 +315,7 @@ D/home/jorge1504/espol/SoftwareDesign/notes
 D
 
 # Command line history (oldest to newest):
+:                                      
 :!touch 1:principiosDeDisenio.md
 :filer .pdf
 :filter .pdf
@@ -308,10 +324,11 @@ D
 :Term
 :w
 :!terminalLauncher
-:q
 :Wq
+:q
 
 # Search history (oldest to newest):
+/fireba
 /pdf
 /bash
 /Pi

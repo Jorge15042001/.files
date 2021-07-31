@@ -5,6 +5,7 @@ alias terminal='x-terminal-emulator& --working-directory=$(pwd)'
 
 alias dotfiles='cd $HOME/.files'
 
+alias clear='clear;neofetch'
 
 #anbox_upload(){
 #    adb push $1 -a 'sdcard/Download'

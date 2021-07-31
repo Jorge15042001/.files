@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =0
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/jorge1504/Desktop/FILES/selftudies/machine_learning_tensor_flow/1__tensor_flow_fundamentals'
 let g:netrw_dirhist_0='/home/jorge1504/submitForm'
 let g:netrw_dirhist_9='/home/jorge1504/.files/configFiles/awesomewm/awesome/themes/multicolor'
 let g:netrw_dirhist_8='/home/jorge1504/.vim'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_5='/home/jorge1504/.files/configFiles/vim/.vim/pack/plugins/
 let g:netrw_dirhist_4='/home/jorge1504/.files/configFiles/vim/.vim/pack/plugins'
 let g:netrw_dirhist_3='/home/jorge1504/.files/configFiles/vim/.vim/pack'
 let g:netrw_dirhist_2='/home/jorge1504/.files/configFiles/vim/.vim'
-let g:netrw_dirhist_1='/home/jorge1504/.files/configFiles/vim/.vim/plugged'
