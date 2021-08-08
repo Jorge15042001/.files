@@ -1,8 +1,8 @@
 ## Todo
 
-* instalation script for apt deps
-* isntalation script for snap dependecies
-* isntalation script for vim plugins
-* isntalation script for vim coc-plugins
-* isntalation script for otherInstaliationScripts
+* installation script for apt dependencies
+* installation script for snap dependencies
+* installation script for vim plugins
+* installation script for vim coc-plugins
+* installation script for otherInstaliationScripts
 
