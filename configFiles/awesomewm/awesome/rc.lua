@@ -36,8 +36,8 @@ awesome.connect_signal(
         --os.execute('x-terminal-emulator --wait -- bashtop')
         -- For Force Composition Pipeline, solver screen taering issues
         os.execute("nvidia-settings --assign CurrentMetaMode=\"nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }\"")
-        awful.spawn.once('gnome-terminal --wait -- bashtop', {tag = screen[1].tags[7]})
-        awful.spawn.once('gnome-terminal --wait -- vifm', {tag = screen[1].tags[6]})
+        --awful.spawn.once('gnome-terminal --wait -- bashtop', {tag = screen[1].tags[7]})
+        --awful.spawn.once('gnome-terminal --wait -- vifm', {tag = screen[1].tags[6]})
         --awful.util.spawn('gnome-terminal --wait -- bashtop')
         --awful.util.spawn('gnome-terminal --wait -- ranger')
     end
