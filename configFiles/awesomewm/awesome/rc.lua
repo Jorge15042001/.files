@@ -769,8 +769,8 @@ awful.rules.rules = {
     { rule_any = {type = { "normal", "dialog" }
       }, properties = { titlebars_enabled = false  }
     },
-    { rule = { class = "x-terminal-emulator" },
-        properties = { opacity = 1 } }, -- just to use compton, opacity is overide by terminal configuration
+    --{ rule = { class = "x-terminal-emulator" },
+    --    properties = { opacity = 1 } }, -- just to use compton, opacity is overide by terminal configuration
 
 
 
