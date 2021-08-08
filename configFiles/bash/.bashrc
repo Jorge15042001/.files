@@ -134,6 +134,9 @@ export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 # vim mode
 set -o vi
 
+# jupyter notebooks path
+export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
+
 # startship
 eval "$(starship init bash)"
 neofetch
