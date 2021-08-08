@@ -83,3 +83,6 @@ Plug 'tpope/vim-fugitive'
 "Plug 'petrbroz/vim-glsl'
 "Plug 'jreybert/vimagit'
 call plug#end()
+
+let g:coc_global_extensions = ["coc-clangd","coc-cmake","coc-css","coc-cssmodules","coc-glslx","coc-go","coc-highlight","coc-html","coc-htmldjango","coc-htmlhint","coc-html-css-support","coc-java","coc-jedi","coc-json","coc-just-complete","coc-markdownlint","coc-pydocstring","coc-sh","coc-spell-checker","coc-sql","coc-tsserver","coc-xml"]
+
