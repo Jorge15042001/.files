@@ -139,6 +139,6 @@ export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
 
 # startship
 eval "$(starship init bash)"
-neofetch
+neofetch --ascii_distro Arch
 
 
