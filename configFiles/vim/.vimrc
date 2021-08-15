@@ -78,6 +78,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'kh3phr3n/python-syntax'
+Plug 'bfrg/vim-cpp-modern'
 "Plug 'stevearc/vim-arduino'
 "Plug 'tikhomirov/vim-glsl'
 "Plug 'petrbroz/vim-glsl'
