@@ -16,7 +16,7 @@ nnoremap <leader>k <C-W>_
 nnoremap <leader>l <C-W>\|
 
 " same size
-nnoremap <leader>s <C-W>=
+nnoremap <leader>= <C-W>=
 
 " resizing
 
