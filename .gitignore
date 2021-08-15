@@ -1,2 +1,3 @@
 /configFiles/vim/.vim/plugged/*
 /configFiles/vim/.vim/.netrwhist
+configFiles/vifmConfig/vifm/vifminfo.json
