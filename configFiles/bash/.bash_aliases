@@ -1,6 +1,7 @@
 # alias android='anbox launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity'
 # alias android_restart='sudo systemctl restart snap.anbox.container-manager.service'
 alias ls='exa '
+alias cat ="bat " # replacement for cat
 alias terminal='x-terminal-emulator& --working-directory=$(pwd)'
 
 alias dotfiles='cd $HOME/.files'
