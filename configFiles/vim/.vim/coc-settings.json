@@ -1,8 +1,0 @@
-{
-  "git.enableGutters": false,
-  "clangd.path": "/home/jorge1504/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd",
-
-  "texlab.path": "",
-  "texlab.build.onSave": true
-
-}
