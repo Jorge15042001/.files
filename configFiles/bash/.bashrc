@@ -131,6 +131,9 @@ export GOPATH=${HOME}/go
 export GOBIN=${GOPATH}/bin
 export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 
+# BROWSER
+export BROWSER=firefox
+
 # vim mode
 set -o vi
 

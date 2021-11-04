@@ -1,4 +1,4 @@
-set nospell spelllang=en_us
+set nospell spelllang=es
 syntax on
 
 " Set encoding
@@ -9,7 +9,6 @@ set mouse=a
 
 " numeration
 set number
-set relativenumber
 
 set backspace=indent,eol,start
 " set cursorline 
@@ -20,8 +19,8 @@ set autoindent
 set hidden
 set noerrorbells
 
-set tabstop=4 softtabstop=4
-set shiftwidth=4
+set tabstop=2 softtabstop=2
+set shiftwidth=2
 set expandtab
 
 set smartindent
@@ -51,10 +50,13 @@ autocmd filetype c nnoremap <C-x> :!./%:r.out %<Enter>
 "runing python scripts
 autocmd filetype python nnoremap <C-x> :!python3 %:r.py % <Enter>
 
+" md to pdf
+autocmd filetype markdown nnoremap  <C-x> :!pandoc  -o %:r.pdf % <Enter>
+
 
 " spelllang for md files
-autocmd FileType markdown setlocal spell
-autocmd BufRead,BufNewFile *.md setlocal spell
+" autocmd FileType markdown setlocal spell
+" autocmd BufRead,BufNewFile *.md setlocal spell
 "adding git commands 
 " nnoremap <C-a> :!git add % <Enter> :e <Enter> 
 " nnoremap <C-h> :!git commit -m"
@@ -80,11 +82,15 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'kh3phr3n/python-syntax'
 Plug 'bfrg/vim-cpp-modern'
+Plug 'rhysd/vim-grammarous'
+Plug 'preservim/nerdcommenter'
+Plug 'dhruvasagar/vim-table-mode'
 "Plug 'stevearc/vim-arduino'
 "Plug 'tikhomirov/vim-glsl'
 "Plug 'petrbroz/vim-glsl'
 "Plug 'jreybert/vimagit'
+""""""" assembly plugin
 call plug#end()
 
-let g:coc_global_extensions = ["coc-clangd","coc-cmake","coc-css","coc-cssmodules","coc-glslx","coc-go","coc-highlight","coc-html","coc-htmldjango","coc-htmlhint","coc-html-css-support","coc-java","coc-jedi","coc-json","coc-just-complete","coc-markdownlint","coc-pydocstring","coc-sh","coc-spell-checker","coc-sql","coc-tsserver","coc-xml","coc-yank"]
+let g:coc_global_extensions = ["coc-clangd","coc-cmake","coc-cssmodules","coc-glslx","coc-go","coc-highlight","coc-html","coc-htmldjango","coc-htmlhint","coc-html-css-support","coc-java","coc-jedi","coc-json","coc-just-complete","coc-markdownlint","coc-pydocstring","coc-sh","coc-sql","coc-texlab","coc-tsserver","coc-xml","coc-yank"]
 

@@ -36,6 +36,7 @@ local config_path = awful.util.getdir("config") .. "/"
 require("main.error-handling")
 -- {{{ Themes -- }}}
 --beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
+-- TODO: remove conflicting properties in theme file
 beautiful.init("/home/jorge1504/.files/configFiles/awesomewm/awesome/themes/jorge-theme/theme.lua")
 
 -- Custom Local Library

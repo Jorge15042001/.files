@@ -15,8 +15,8 @@ local os = os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme                                     = {}
-theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor"
-theme.wallpaper                                 = os.getenv("HOME") .. "/.files/wallpapers/0050.jpg"--theme.confdir .. "/wall.png"
+theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/jorge-theme"
+theme.wallpaper                                 = os.getenv("HOME") .. "/.files/wallpapers/0062.jpg"--theme.confdir .. "/wall.png"
 theme.font                                      = "Terminus 8"
 theme.menu_bg_normal                            = "#000000"
 theme.menu_bg_focus                             = "#000000"
@@ -54,8 +54,10 @@ theme.widget_clock                              = theme.confdir .. "/icons/clock
 theme.widget_vol                                = theme.confdir .. "/icons/spkr.png"
 theme.taglist_squares_sel                       = theme.confdir .. "/icons/square_a.png"
 theme.taglist_squares_unsel                     = theme.confdir .. "/icons/square_b.png"
-theme.tasklist_plain_task_name                  = true
-theme.tasklist_disable_icon                     = true
+-- theme.tasklist_plain_task_name                  = true
+-- theme.tasklist_disable_icon                     = true
+theme.tasklist_bg_focus                         = "fff000"
+theme.tasklist_bg_minimize                      = "fff000"
 theme.useless_gap                               = 3
 theme.layout_tile                               = theme.confdir .. "/icons/tile.png"
 theme.layout_tilegaps                           = theme.confdir .. "/icons/tilegaps.png"
@@ -289,6 +291,7 @@ function theme.at_screen_connect(s)
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(19), bg = theme.bg_normal, fg = theme.fg_normal })
 
+    -- TODO: the status line should not be part o theme file
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,

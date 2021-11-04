@@ -8,7 +8,7 @@ local _M = {
   -- This is used later as the default terminal and editor to run.
   -- terminal = "xterm",
   terminal = "default_terminal_emulator",
-   
+
   -- Default modkey.
   -- Usually, Mod4 is the key with a logo between Control and Alt.
   -- If you do not like this or do not have such a key,
@@ -20,6 +20,14 @@ local _M = {
   -- user defined wallpaper
   wallpaper = nil,
   --wallpaper = home .. "/Pictures/your-wallpaper-here.jpg",
+
+  -- user's commands
+  screenshot_command = "flameshot gui -p ~/Pictures",
+  screenshot_command_no_path = "flameshot gui ",
+  screenshot_clipboard = "flameshot full -c",
+  screenshot_save = "flameshot full -p ~/Pictures",
+  -- user's programs
+  browser = "firefox"
 }
 
 return _M

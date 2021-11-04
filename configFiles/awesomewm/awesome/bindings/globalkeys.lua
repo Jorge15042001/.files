@@ -110,13 +110,13 @@ function _M.get()
     -- awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
     --           {description = "swap with previous client by index", group = "client"}),
     awful.key({"Control",  altkey    }, "h", function () awful.client.swap.global_bydirection("left") end,
-              {description = "swap with left"}),
+              {description = "swap with left", group="client"}),
     awful.key({"Control",  altkey    }, "j", function () awful.client.swap.global_bydirection("down") end,
-              {description = "swap with down"}),
+              {description = "swap with down", group="client"}),
     awful.key({"Control",  altkey    }, "k", function () awful.client.swap.global_bydirection("up") end,
-              {description = "swap with up"}),
+              {description = "swap with up", group="client"}),
     awful.key({"Control",  altkey    }, "l", function () awful.client.swap.global_bydirection("right") end,
-              {description = "swap with right"}),
+              {description = "swap with right", group="client"}),
 
     awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
               {description = "focus the next screen", group = "screen"}),
@@ -144,10 +144,14 @@ function _M.get()
 
     --   -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
     -- Layout manipulation
-    awful.key({ modkey, altkey    }, "l",     function () awful.tag.incmwfact( 0.05)          end,
+    awful.key({ modkey, altkey    }, "l",     function () awful.tag.incmwfact( 0.02)          end,
               {description = "increase master width factor", group = "layout"}),
-    awful.key({ modkey, altkey    }, "h",     function () awful.tag.incmwfact(-0.05)          end,
+    awful.key({ modkey, altkey    }, "h",     function () awful.tag.incmwfact(-0.02)          end,
               {description = "decrease master width factor", group = "layout"}),
+    awful.key({ modkey, altkey    }, "j",     function () awful.client.incwfact( 0.02)          end,
+              {description = "increase master height factor", group = "layout"}),
+    awful.key({ modkey, altkey    }, "k",     function () awful.client.incwfact(-0.02)          end,
+              {description = "decrease master height factor", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
               {description = "increase the number of master clients", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1, nil, true) end,
@@ -227,7 +231,22 @@ function _M.get()
                   end
                 end
               end,
-              {description = "togle status bar", group = "launcher"})
+              {description = "togle status bar", group = "launcher"}),
+
+    --   -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    -- screenshot
+    awful.key({ altkey }, "p", function() os.execute(CONFIG.vars.screenshot_command) end,
+              {description = "take a screenshot", group = "screenshot"}),
+    --Save screenshot to clipboard
+    awful.key({ altkey , "Control" }, "p", function () os.execute(CONFIG.vars.screenshot_clipboard) end,
+              {description = "Save screenshot to clipboard", group = "screenshot"}) ,
+
+    --Save screenshot to system
+    awful.key({ altkey , "Shift" }, "p", function () os.execute(CONFIG.vars.screenshot_save) end,
+              {description = "Save screenshot to system", group = "screenshot"}) ,
+    --Save screenshot to path
+    awful.key({ altkey , modkey}, "p", function () os.execute(CONFIG.vars.screenshot_command_no_path) end,
+              {description = "Save screenshot (chose path)", group = "screenshot"})
 
   )
 

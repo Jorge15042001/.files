@@ -8,7 +8,8 @@ alias grep='rg '
 
 alias dotfiles='cd $HOME/.files'
 
-alias clear='/usr/bin/clear;neofetch --ascii_distro Arch'
+alias clear='/usr/bin/clear;neofetch '
+#alias BROWSER='qutebrowser '
 
 #anbox_upload(){
 #    adb push $1 -a 'sdcard/Download'
